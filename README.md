@@ -16,5 +16,8 @@
 
 
 | `index` | `Description` |
-| `0x00-python-hello_world` | Introduction to python |
-| `0x01-python-if_else_loops_functions` | If/Else, Loop and Functions | 
+| ------- | ------------- |
+| `0x00` | Python - Hello World - Introduction to python |
+| `0x01` | Python - If/Else, Loop and Functions |
+| `0x02` | Python - Import and Modules usage in code |
+| `0x03` | Python - Data Structures: Lists, Tuples |
