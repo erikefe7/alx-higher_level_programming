@@ -17,4 +17,4 @@
 | `10-check_cycle.c, lists.h` | C program that finds a loop in a linked list |
 | `100-write.py` | script prints a message with write sys |
 | `101-compile` | shell script that compiles a python file |
-| `102-magic_calculation.py | python function that does exactly the samee as a given disassembler |
+| `102-magic_calculation.py` | python function that does exactly the samee as a given disassembler |
