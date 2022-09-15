@@ -3,18 +3,14 @@
 
 
 class Square:
-    """ A class that defines a square.
-
-    by its size.
-
+    """This class defines a square.
+    This class has no public attributes.
     """
     def __init__(self, size=0):
-        """ Method to initialize the square object.
-
-        Args: 
-            size(int) this defines the size of the square.
+        """This method initiates a square.
+        Args:
+            size (int): This defines the size of the square.
                 The size is validated with try/except.
-
         """
         try:
             self.__size = size
