@@ -1,25 +1,10 @@
 #!/usr/bin/python3
+
+"""Class Square that defines a square."""
+
+
 class Square:
-    """ A class that defines a square by its size
-    """
-    def __eq__(self, other):
-        return self.__size == other.__size
-
-    def __lt__(self, other):
-        return self.__size < other.__size
-
-    def __le__(self, other):
-        return self.__size <= other.__size
-
-    def __ne__(self, other):
-        return self.__size != other.__size
-
-    def __gt__(self, other):
-        return self.__size > other.__size
-
-    def __ge__(self, other):
-        return self.__size >= other.__size
-
+    """Represent a square."""
     def __init__(self, size=0):
         """ Method to initialize the square object
         """
@@ -51,3 +36,27 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
+
+    def __eq__(self, other):
+        """Define the == comparision to a Square."""
+        return self.area() == other.area()
+
+    def __ne__(self, other):
+        """Define the != comparison to a Square."""
+        return self.area() != other.area()
+
+    def __lt__(self, other):
+        """Define the < comparison to a Square."""
+        return self.area() < other.area()
+
+    def __le__(self, other):
+        """Define the <= comparison to a Square."""
+        return self.area() <= other.area()
+
+    def __gt__(self, other):
+        """Define the > comparison to a Square."""
+        return self.area() > other.area()
+
+    def __ge__(self, other):
+        """Define the >= compmarison to a Square."""
+        return self.area() >= other.area()

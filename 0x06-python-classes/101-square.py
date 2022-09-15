@@ -1,26 +1,10 @@
 #!/usr/bin/python3
+
+"""Class Square that defines a square."""
+
+
 class Square:
-    """ A class that defines a square by its size
-    """
-    def __str__(self):
-        rtn = ""
-
-        if self.size == 0:
-            return rtn
-
-        for i in range(self.position[1]):
-            rtn += "\n"
-
-        for i in range(0, self.size):
-            for k in range(self.position[0]):
-                rtn += " "
-            for j in range(self.size):
-                rtn += "#"
-            if i is not (self.size - 1):
-                rtn += "\n"
-
-        return rtn
-
+    """Represent a square."""
     def __init__(self, size=0, position=(0, 0)):
         """ Method to initialize the square object
         """
@@ -85,3 +69,23 @@ class Square:
                 for j in range(self.size):
                     print("#", end='')
                 print()
+
+    def __str__(self):
+        """Define the print() representation of a Square."""
+        rtn = ""
+
+        if self.size == 0:
+            return rtn
+
+        for i in range(self.position[1]):
+            rtn += "\n"
+
+        for i in range(0, self.size):
+            for k in range(self.position[0]):
+                rtn += " "
+            for j in range(self.size):
+                rtn += "#"
+            if i is not (self.size - 1):
+                rtn += "\n"
+
+        return rtn
