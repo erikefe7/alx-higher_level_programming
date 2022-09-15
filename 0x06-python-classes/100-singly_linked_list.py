@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" A class that defines the node of a singly linked list """
+
+
 class Node:
     def __init__(self, data, next_node=None):
         self.data = data
