@@ -2,7 +2,7 @@
 """ Module that contains a function that writes to a text file """
 
 
-def write_file(filename"", text=""):
+def write_file(filename="", text=""):
     """ Function that writes to a text file
     Args:
         filename: filename
